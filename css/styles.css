@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+body > nav > div > div > button.logout-btn > a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    background-color: #007bff; /* Bleu */
+    color: #000;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Styles précédents... */
+
+
+/* Styles précédents... */
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-form {
+    margin-bottom: 20px;
+}
+
+.post-form textarea {
+    width: 97%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.post-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+    margin: 10;
+}
+/* Styles précédents... */
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffa500; /* Orange clair */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Rouge */
+}
+
+#form_modify_del{
+    display: flex;
+    justify-content: right;
+}
+
+#date_heure{
+    color: grey;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+}
+/* Styles précédents... */
