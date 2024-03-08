@@ -49,7 +49,7 @@
     </nav>
     <div class="container">
         <div class="post-form">
-            <form action="#" method="post" id="postForm">
+            <form action="#" method="post" class="postForm">
                 <textarea name="message" id="message" placeholder="Exprimez-vous..." rows="4"></textarea>
                 <input type="hidden" name="date_heure" value="<?=date('d/m/Y H:i:s')?>">
                 <button type="submit" name="add_message" class="post-btn">Publier</button>
@@ -70,7 +70,7 @@
                     if ($data["user_id"] == $_COOKIE["id"]){
                 ?>
                 <div id="form_modify_del">
-                <button onclick="ajouterDivAvecFormulaire()">Ajouter une div avec un formulaire</button>
+                <button id="edit" class="edit-btn">Modifier</button>
                     <form action="#" method="post">
                         <input type="hidden" name="id" value="<?=$data["id"]?>">
                         <input type="submit" value="Supprimer" class="delete-btn" name="delete">
