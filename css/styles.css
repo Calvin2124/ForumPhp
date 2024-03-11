@@ -124,4 +124,17 @@ body > nav > div > div > button.logout-btn > a{
     flex-direction: row-reverse;
     font-size: 12px;
 }
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+.close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
 /* Styles précédents... */

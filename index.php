@@ -38,6 +38,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<dialog id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Modifier mon message</h2>
+        <p>Il faudra mettre le formulaire et les boutons "annuler et modifier</p>
+    </div>
+</dialog>
     <nav class="navbar">
         <div class="container">
             <h1>Mini Réseau Social</h1>
@@ -56,7 +63,7 @@
             </form>
         </div>
                 <?php
-                    $request = $db->prepare("SELECT id, user_id, user_message, date_heure FROM messages");
+                    $request = $db->prepare("SELECT id, user_id, user_message, date_heure FROM messages ORDER BY date_heure DESC");
                     $request->execute();
                     $datas = $request->fetchAll();
                     foreach($datas as $data){
@@ -64,6 +71,7 @@
         <div id="posts">
             <!-- Les messages publiés seront ajoutés ici -->
             <div class="post">
+                <h2>Prénom Nom</h2>
                 <p><?=htmlspecialchars($data["user_message"])?></p>
                 <p id="date_heure"><?=$data["date_heure"]?></p>
                 <?php
